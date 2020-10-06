@@ -1,0 +1,178 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+.navbar,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Roboto!important;
+}
+
+h1 {
+    font-family: Bree Serif!important;
+    font-size: 4rem!important;
+}
+
+h2 {
+    font-family: Titillium Web!important;
+}
+
+h4 {
+    font-family: Titillium Web!important;
+}
+
+
+/* .card-footer {
+    text-align: center;
+}
+
+body > header > div > div > div {
+    text-align: center;
+}*/
+
+a.dropdown-item:active,
+.dropdown-item.active {
+    background: black;
+    color: #fef200;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar-brand img {
+        height: 25px;
+    }
+}
+
+.btn-primary {
+    box-shadow: inset 0px 0px 8px 1px #23395e;
+    background: linear-gradient(to bottom, #ffffff 5%, #e8e8e8 100%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #1f2f47;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to bottom, #e8e8e8 5%, #ffffff 100%);
+    background-color: #e8e8e8;
+}
+
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-8.mb-5>img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>h4 {
+    text-align: center;
+}
+
+body>div>div:nth-child(1)>div.col-md-8.mb-5>a {
+    margin-top: 25px;
+}
+
+.navbar-brand {
+    font-family: EurostileLTStd-BoldCn;
+    color: #fef200!important;
+    font-size: 2.5rem!important;
+}
+
+.display-4 {
+    font-size: 3rem;
+}
+
+body>header>div>div>div>p>i {
+    font-size: 1rem;
+}
+
+.navbar {
+    background: black!important;
+    font-weight: bold;
+    font-family: Titillium Web!important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fef200!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fef200!important;
+}
+
+.navbar-dark .navbar-nav .active .nav-link:focus,
+.navbar-dark .navbar-nav .active .nav-link:hover {
+    color: #fff!important;
+}
+
+.navbar .show {
+    color: #fef200!important;
+}
+
+body>header {
+    height: 400px;
+}
+
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
+    border-radius: 8px;
+    border-width: 3px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.bg-primary {
+    margin-top: 78px;
+    height: 200px;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), black url("../img/bg-wood-dark-wide.jpg")center center no-repeat!important;
+}
+
+.darkened {
+    margin-top: 78px;
+    height: 200px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95)), black url(../img/bg-wood-dark-wide.jpg)center center no-repeat!important;
+}
+
+.container-footer {
+    max-width: 920px!important;
+}
+
+body>footer {
+    background: black!important;
+}
