@@ -6,6 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .navbar,
@@ -25,16 +26,47 @@ h5 {
     -ms-user-select: none;
     /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 *:focus {
     outline: none;
 }
 
+
+/* BUTTON */
+
+.contentButton {
+	background:linear-gradient(to bottom, #4f4f4f 5%, #1f1f1f 100%);
+	background-color:#4f4f4f;
+	border-radius:5px;
+	border:1px solid #1f1f1f;
+	display:inline-block;
+	cursor:pointer;
+	color:#fef100;
+	font-family:Titillium Web;
+	font-size:18px;
+	font-weight:bold;
+	padding:6px 18px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #1f1f1f;
+    margin: 0 auto;
+    display: block;
+}
+.contentButton:hover {
+	background:linear-gradient(to bottom, #1f1f1f 5%, #4f4f4f 100%);
+	background-color:#1f1f1f;
+}
+.contentButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* END BUTTON */
+
+
 body {
-    font-family: Roboto!important;
+    font-family: Source Sans Pro!important;
 }
 
 h1 {
@@ -50,25 +82,40 @@ h4 {
     font-family: Titillium Web!important;
 }
 
-
-/* .card-footer {
-    text-align: center;
-}
-
-body > header > div > div > div {
-    text-align: center;
-}*/
-
 a.dropdown-item:active,
 .dropdown-item.active {
     background: black;
     color: #fef200;
 }
 
-@media screen and (max-width: 700px) {
+.navbar-brand img {
+    display: block;
+}
+
+
+/* mobile/small screen css */
+
+@media screen and (max-width: 767px) {
     .navbar-brand img {
         height: 25px;
     }
+    .navbar {
+        min-height: 76px;
+    }
+    .table {
+        width: 75%;
+        margin: 0 auto!important;
+    }
+}
+/* end @media */
+
+
+button:focus {
+    outline: 5px auto #fef200;
+}
+
+.table {
+    align-items: center;
 }
 
 .btn-primary {
@@ -130,6 +177,10 @@ body>header>div>div>div>p>i {
     color: #fef200!important;
 }
 
+table>tbody>tr td:nth-child(1) {
+    font-family: Titillium Web!important;
+}
+
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #fef200!important;
@@ -148,23 +199,34 @@ body>header {
     height: 400px;
 }
 
-body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
-    border-radius: 8px;
-    border-width: 3px;
+.table td {
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
+
+
+/**
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
+    border-collapse: separate !important;
+    border-radius: 8px!important;
+    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+}
+**/
 
 .card-footer {
     text-align: center;
 }
 
 .bg-primary {
-    margin-top: 78px;
-    height: 200px;
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), black url("../img/bg-wood-dark-wide.jpg")center center no-repeat!important;
+    margin-top: 76px;
+    height: 450px;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), black url("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fwww.itm.co.nz%2FImage%3FAction%3DView%26Image_id%3D743&overlay_color=565656cc&text=PLACEHOLDER%20PROMO%20IMAGE&y_align=middle&x_align=center") center no-repeat!important;
 }
 
 .darkened {
-    margin-top: 78px;
+    margin-top: 76px;
     height: 200px;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.95)), black url(../img/bg-wood-dark-wide.jpg)center center no-repeat!important;
 }
