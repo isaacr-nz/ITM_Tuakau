@@ -222,7 +222,7 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
 .bg-primary {
     margin-top: 76px;
     height: 450px;
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), black url("https://textoverimage.moesif.com/image?image_url=https%3A%2F%2Fwww.itm.co.nz%2FImage%3FAction%3DView%26Image_id%3D743&overlay_color=565656cc&text=PLACEHOLDER%20PROMO%20IMAGE&y_align=middle&x_align=center") center no-repeat!important;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), black url("https://www.itm.co.nz/Image?Action=View&Image_id=743") center no-repeat!important;
 }
 
 .darkened {
