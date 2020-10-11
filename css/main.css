@@ -178,6 +178,9 @@ a.dropdown-item:active,
         font-size: 3rem!important;
         text-align: center;
     }
+    .neg-margin {
+        margin-top: 0;
+    }
 }
 /* end @media */
 
