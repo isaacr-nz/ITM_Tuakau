@@ -331,29 +331,49 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
     color: #fef200;
 }
 
+#paper {
+    height: auto;
+    width: 100%;
+    background: url("../img/paper.jpg") center center no-repeat!important;
+    background-size: 100% auto;
+    background-attachment: fixed!important;
+}
+
 .bg-primary {
 
     margin-top: 76px;
     height: 450px;
-    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("https://www.thomsonsitm.co.nz/UserFiles/ThomsonsITM/Slider/410/roof-hammer_1.jpg") center center;
+    background: black!important;
+    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center center!important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .card-img-top {
-    border-left: 6px solid #fef200;   
+    border-left: 6px solid #fef200;
+}
+
+.neg-margin {
+    margin-top: -140px;
+}
+
+#paper > div > div > div > div > img {
+    display: block;
+    margin: 0 auto;
 }
 
 .main-img {
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
-    border-radius: 0 0 15px 15px;
+    border-radius: none;
     margin-top: 76px;
 }
 
 .darkened {
     margin-top: 76px;
     height: 200px;
-    background: linear-gradient(0deg,  rgba(0, 0, 0, 0.5), #fef10050), black url(../img/bg-wood-dark-wide.jpg)center center no-repeat!important;
+    background: linear-gradient(0deg,  rgba(0, 0, 0, 1), #fef10050), black url(../img/bg-wood-dark-wide.jpg)center center no-repeat!important;
 }
 
 .container-footer {
