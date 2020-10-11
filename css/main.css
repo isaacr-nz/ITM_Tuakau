@@ -94,6 +94,11 @@ background: linear-gradient(41deg, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 100%);
     color: white;
 }
 
+.nav-link {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
 .dark-side-panel {
     background: black;
     color: white;
@@ -119,6 +124,7 @@ body {
     height: 100%;
     box-shadow: 0px 6px 22px -10px rgba(0,0,0,0.3);
 }
+
 
 
 iframe {
