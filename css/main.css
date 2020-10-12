@@ -344,11 +344,17 @@ background: linear-gradient(90deg, rgba(122,114,102,1) 0%, rgba(225,204,168,1) 4
 .bg-primary {
 
     margin-top: 76px;
-    height: 450px;
+    height: 400px;
     background: black!important;
-    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center center no-repeat black!important;
+    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center bottom no-repeat black!important;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.bridge {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.459), #fef10060),url("../img/bridge_bg.jpg") center center no-repeat black!important;
+    background-size: contain;
+    
 }
 
 .card-img-top {
