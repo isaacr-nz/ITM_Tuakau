@@ -100,7 +100,7 @@ border-radius: 0;
 }
 
 .dark-side-panel {
-    background: linear-gradient(80deg, black, #262626);
+    background: linear-gradient(80deg, black, #3a3a3a);
     color: white;
     padding: 25px 35px;
 }
@@ -196,7 +196,7 @@ button:focus {
     margin: 0 auto;
     border-radius: 0;
     border-width: 0;
-    background: black!important;
+    background: transparent!important;
     color: white;
 }
 
@@ -337,13 +337,8 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
 #paper {
     height: auto;
     width: 100%;
-    background: url("../img/paper.jpg") center center no-repeat!important;
-    background-size: 100% auto;
-    background-attachment: fixed!important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: rgb(122,114,102);
+background: linear-gradient(90deg, rgba(122,114,102,1) 0%, rgba(225,204,168,1) 40%, rgba(225,204,168,1) 60%, rgba(122,114,102,1) 100%);
 }
 
 .bg-primary {
@@ -351,7 +346,7 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
     margin-top: 76px;
     height: 450px;
     background: black!important;
-    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center center!important;
+    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center center no-repeat black!important;
     background-size: cover;
     background-repeat: no-repeat;
 }
