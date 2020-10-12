@@ -100,7 +100,7 @@ border-radius: 0;
 }
 
 .dark-side-panel {
-    background: black;
+    background: linear-gradient(80deg, black, #262626);
     color: white;
     padding: 25px 35px;
 }
@@ -340,6 +340,10 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
     background: url("../img/paper.jpg") center center no-repeat!important;
     background-size: 100% auto;
     background-attachment: fixed!important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .bg-primary {
