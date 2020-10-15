@@ -1,25 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
 body {
     background: #F5F5F5;
     color: #272727;
     height: 2400px;
     margin-left: 85px;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.content {
+    z-index: 100;
+    transition: all .2s ease;
 }
 
 h1, h2, h3, h4 {
     z-index: 10;
-    font-family: "Archivo Black";
 }
+
+h4 {
+    font-family: Exo;
+    font-weight: 700;
+}
+
+
 
 .sidebar {
     z-index: 999;
+    font-family: "Archivo Black";
 }
 
 .masthead {
     height: 100vh;
     min-height: 500px;
     transition: all .2s ease-in;
-  }
+    font-weight: 700;
+}
+
+.masthead .fixed-top {
+    font-family: "Exo";
+}
+
+.masthead .fixed-top h2 {
+    font-family: "Archivo Black";
+}
+
+.masthead button {
+    font-family: "Archivo Black";
+
+}
 
 .container-sm {
     max-width: 960px;
@@ -27,6 +55,12 @@ h1, h2, h3, h4 {
 
 .text_logo {
     font-size: 72px;
+    font-family: "Exo";
+    font-weight: 700;
+}
+
+.text_logo {
+    font-family: "Archivo Black";
     font-weight: 400;
 }
 
@@ -61,7 +95,7 @@ h1, h2, h3, h4 {
     height: 100vh;
     position: fixed;
     border-right: 3px solid #3399ff;
-    transition: all .4s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .sidebar_list {
@@ -81,87 +115,52 @@ h1, h2, h3, h4 {
     background: none;
 }
 
-body{
+body {
     background: #F5F5F5;
-  }
-  
-  
-  .circle{
-    position: absolute;
-    border-radius: 50%;
+}
+
+.masthead .container.h-100 {
+    max-width: 720px;
+}
+
+
+/* MASTER HEAD TEXT */
+div.masthead > div > div > div.col-12.text-center.py-5 {
     background: white;
-    animation: ripple 15s infinite;
-    box-shadow: 0px 0px 1px 0px #508fb9;
-  }
-  
-  .small{
-    width: 200px;
-    height: 200px;
-    left: -100px;
-    bottom: -100px;
-  }
-  
-  .medium{
-    width: 400px;
-    height: 400px;
-    left: -200px;
-    bottom: -200px;
-  }
-  
-  .large{
-    width: 600px;
-    height: 600px;
-    left: -300px;
-    bottom: -300px;
-  }
-  
-  .xlarge{
-    width: 800px;
-    height: 800px;
-    left: -400px;
-    bottom: -400px;
-  }
-  
-  .xxlarge{
-    width: 1000px;
-    height: 1000px;
-    left: -500px;
-    bottom: -500px;
-  }
-  
-  .shade1{
-    opacity: 0.2;
-  }
-  .shade2{
-    opacity: 0.5;
-  }
-  
-  .shade3{
-    opacity: 0.7;
-  }
-  
-  .shade4{
-    opacity: 0.8;
-  }
-  
-  .shade5{
-    opacity: 0.9;
-  }
-  
-  @keyframes ripple{
-    0%{
-      transform: scale(0.8);
-    }
-    
-    50%{
-      transform: scale(1.2);
-    }
-    
-    100%{
-      transform: scale(0.8);
-    }
-  }
-  
+    color: #3399ff!important;
+    background-image: url("../img/buttons.svg");
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: 100px;
+    background-position: 10px 15px;
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+}
+/* END MASTER HEAD TEXT */
+.siteSmallImg {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .2s ease-out;
+}
+
+.siteSmallImg:hover {
+    -webkit-filter: none;
+    /* Safari 6.0 - 9.0 */
+    filter: none;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.siteSmallRow {
+    height: 120px;
+}
+
+
+
+
+
 
 .list-group-item a {
     font-family: "Archivo Black";
@@ -169,18 +168,14 @@ body{
     color: #3399ff;
 }
 
-body > div.fullPage.w-100.align-items-center > div.masthead > div > div > div:nth-child(2) {
-    color: white!important;
-}
-
 .fullPage {
     height: 100vh;
     width: 100vw;
     background: #3399ff;
 }
-   
-   .list-group-flush>.list-group-item {
-       margin: 0 auto;
+
+.list-group-flush>.list-group-item {
+    margin: 0 auto;
     border-width: 0 0 1px;
     width: fit-content;
     border: 3px solid;
@@ -191,7 +186,6 @@ body > div.fullPage.w-100.align-items-center > div.masthead > div > div > div:nt
 .list-group-flush>.list-group-item:hover {
     background: #3399ff;
     cursor: pointer;
-
 }
 
 .list-group-item a:hover {
@@ -206,14 +200,14 @@ body > div.fullPage.w-100.align-items-center > div.masthead > div > div > div:nt
     border-bottom-width: 3px;
 }
 
-div.masthead > div > div > div.col-12.fixed-top.text-center {
+div.masthead>div>div>div.col-12.fixed-top.text-center {
     padding: 0!important;
     margin-left: 85px;
     width: calc(100vw - 85px);
 }
 
 .masthead h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Exo;
 }
 
 .fixed-top.text-center h2 {
@@ -226,7 +220,6 @@ div.masthead > div > div > div.col-12.fixed-top.text-center {
     transition: all .2s linear;
 }
 
-
 /*  MENU BUTTON  */
 
 .op1 {
@@ -238,9 +231,8 @@ div.masthead > div > div > div.col-12.fixed-top.text-center {
 }
 
 .menu_open {
-    width: 100vw;
+    width: 33%;
     text-align: left;
-    margin-left: 0;
     border: none;
 }
 
@@ -249,7 +241,6 @@ div.masthead > div > div > div.col-12.fixed-top.text-center {
     cursor: pointer;
     margin-top: 25px;
     margin-left: 25px;
-
 }
 
 .menu_open .toggle_button {
@@ -269,31 +260,53 @@ div.masthead > div > div > div.col-12.fixed-top.text-center {
     opacity: 0;
 }
 
-.body_menu_open {
-    margin-left: 0;
-}
-
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
     background-color: #3399ff;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .change .bar1 {
+}
+
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-  }
+}
 
-  .transparent_sidebar {
-      background: #F5F5F5;
-      border-color: #F5F5F5;
-  }
+.transparent_sidebar {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 845px) {
+    div.masthead > div > div > div.col-12.text-center.py-5 {
+        background: transparent;
+        background-image: none;
+        color: white!important;
+    }
+}
+
+.blur {
+    filter: blur(4px);
+}
