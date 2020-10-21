@@ -7,110 +7,143 @@
 <title>Home</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="css/onepage-scroll.css">
 <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
     
-    <div class="sidebar transparent_sidebar">
+    
 
-    <div class="toggle_button" onclick="toggle_menu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-    <div class="menu_container">
-        <h1>HOME</h1>
-        <h1 class="logo">isaacr.online</h1>
-    </div>
+    <nav class="animate__animated animate__slideInDown navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">isaacr.online</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="sidebar_list align-middle">
-        <ul class="list-group list-group-flush">
-            <h2>Menu</h2>
-            <br>
-            <li class="list-group-item"><a href="/"> home </a></li>
-            <li class="list-group-item"><a href="/"> work </a></li>
-            <li class="list-group-item"><a href="/"> about </a></li>
-            <li class="list-group-item"><a href="/"> contact </a></li>
-        </ul>
-    </div>
-</div>
-
-    <div class="fullPage w-100 align-items-center">
-
-    <div class="masthead">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12 fixed-top text-center">
-                    <h2>isaacr.online</h2>
-                </div>
-                <div class="col-12 text-center py-5">
-                    <h1 class="text_logo">Your Next...</h1>
-                    <h1 id="lead" class="lead text_logo"></h1>
-                    <h3>Web / UI / UX Design</h3>
-                    <div class="row justify-content-md-center">
-                        <div class="col-12 text-center">
-                            <button class="btn btn-secondary mt-5">SEE MY WORK</button>
-                            <button class="btn btn-primary mt-5 ml-3">GET IN CONTACT</button>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="collapse navbar-collapse" id="navbarsExample09">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" data-index="1" href="#1">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" data-index="2" href="#2">ABOUT</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#3">MY WORK</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#4">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="col-12 text-right" style="margin-top: -115px;">
+    </nav>
+    <div class="align-items-center w-100">
+        <div class="page_nav_cont position-fixed animate__animated animate__fadeInUp">
+            <div class="page_nav"></div>
+            <div href="1" class="page_nav_sect"></div>
+            <div href="2" class="page_nav_sect"></div>
+            <div href="3" class="page_nav_sect"></div> 
+            <div href="4" class="page_nav_sect"></div>
+        </div>
+    </div>
+ 
+
+
+    <div class="main">
+    <section>
+        <div class="masthead">
+
+            <div class="container h-100">
+                <div class="row h-100">
+                    <div class="animate__animated animate__zoomIn mastcontent m-auto">
+                        <h1 class="text_logo">Your Idea Here!</h1>
+                        <h3>Freelance Design Work from Dunedin NZ</h3>
+                        <div class="row justify-content-md-center">
+                            <div class="col-12 text-center">
+                                <button href="3" class="btn btn-secondary mt-5">SEE MY WORK</button>
+                                <button href="4" class="btn btn-primary mt-5 ml-3">GET IN CONTACT</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-right float-right bottomRightIcons">
             <img src="./img/shoplocal.webp" style="margin-right: 10px;" height="100" width="100" alt="">
             <img src="./img/nzm.svg" style="margin-right: 10px;" height="100" width="100" alt="">
         </div>
-        <div class="col-12 text-center" style="margin-top: -50px;">
-            <svg width="24" height="24"
-                style="z-index: -50;fill: white;margin-bottom: 50px;transform: scale(1.75);"
-                xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                <path
-                    d="M24 12c0-6.623-5.377-12-12-12s-12 5.377-12 12 5.377 12 12 12 12-5.377 12-12zm-1 0c0-6.071-4.929-11-11-11s-11 4.929-11 11 4.929 11 11 11 11-4.929 11-11zm-11.5 4.828l-3.763-4.608-.737.679 5 6.101 5-6.112-.753-.666-3.747 4.604v-11.826h-1v11.828z" />
-                </svg>
-        </div>
-    </div>
+    </section>
+    <section>
+        <div class="container-sm pt-5 content">
+            <!--
+                <<img class="img-fluid" src="https://via.placeholder.com/930x400?text=930x400+Placeholder" alt="">
+                <br><br>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.
+                </p>
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est
+                    laborum.</p>
+        
+                <hr>-->
 
-    <div class="container-sm pt-5 content">
-        <!--
-        <<img class="img-fluid" src="https://via.placeholder.com/930x400?text=930x400+Placeholder" alt="">
-        <br><br>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est
-            laborum.
-        </p>
-        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est
-            laborum.</p>
-
-        <hr>-->
-        <h4 class="text-center mt-5">Client Links</h4>
-        <div class="row justify-content-md-center mb-5 siteSmallRow">
-            <div class="col-md-auto">
-                <a href="https://isaacr.online/itm"><img class="img-fluid siteSmallImg" src="./img/itm_smallLogo.png"
-                        height="100" width="100"></a>
+            <div class="row">
+                <div class="col-md-8 mx-auto bigText pt-5">
+                    <h1>Digital solutions tailored to your specific needs</h1>
+                </div>
+                <div class="col-md-8 mx-auto">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eum iure porro deserunt rem
+                        cum mollitia. Et, numquam inventore. Distinctio nisi consequuntur beatae dicta rerum quibusdam
+                        fugit eaque, perspiciatis vero!</p>
+                </div>
             </div>
-            <div class="col-md-auto ml-5">
-                <a href="https://spacies.co.nz/"><img class="img-fluid siteSmallImg" src="/img/spacies_smallLogo.png"
-                        height="100" width="100"></a>
+
+
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="work_top" >
+                <h1>MY WORK</h1>
+                <div class="triangle"></div>
             </div>
         </div>
-        <hr>
-    </div>
+        <div class="window work_main mx-auto"></div>
+    </section>
+    <section>
+    </section>
+</div>
+
+<!-- END Masthead -->
 
     <footer>
     
@@ -127,54 +160,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+<script src="/js/jquery.onepage-scroll.js"></script>
 <script src="/js/main.js"></script>
-<script>
-    $(document).ready(function () {
-        $(document).scrollTop(0);
-        $(window).scroll(function () {
-            if ($(document).scrollTop() > 300) {
-                $('.logo').addClass('op1');
-                $('.fixed-top.text-center h2').addClass('op0');
-            }
-            else {
-                $('.logo').removeClass('op1');
-                $('.fixed-top.text-center h2').removeClass('op0');
-            }
-        });
-    })
-
-</script>
-<script>
-    $(function () {
-        var messages = [],
-            colors = [],
-            index = 0;
-
-        messages.push('<a href="" >Website</a>');
-        messages.push('<a href="" style="color: rgb(66, 218, 167);">Re-Brand');
-        messages.push('<a href="" style="color: rgb(96, 93, 255);">Logo');
-        messages.push('<a href="" style="color: rgb(196, 62, 62);">Landing Page');
-
-        function cycle() {
-            $('#lead').html(messages[index]);
-            index++;
-
-            if (index === messages.length) {
-                index = 0;
-            }
-
-            setTimeout(cycle, 1500);
-        };
-
-        cycle();
-    });
-
-
-</script>
-<style>
-.random {
-    color: rgb(44, 40, 253);
-}
-</style>
 
 </html>
