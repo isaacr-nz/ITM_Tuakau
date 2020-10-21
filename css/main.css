@@ -323,50 +323,120 @@ body {
 }
 
 .triangle {
-    
-        width: 0;
-        height: 0;
-        border-left: 25px solid transparent;
-        border-right: 25px solid transparent;
-        border-top: 40px solid #287acc;
-        position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 40px solid #287acc;
+    position: absolute;
 }
 
+@media (min-width: 576px) {}
 
 
 
-
-@media (min-width: 576px) { }
-
-@media (min-width: 768px) { }
-
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 992px) {
     .work_main {
         height: 60vh;
     }
     .page_nav_cont {
-        margin-bottom: 0px;
+        height: 60vh;
+        width: 10px;
+        z-index: 9999;
+        right: 10px;
+        top: 20vh;
+        left: auto;
+        margin: 0;
+        transition: all 0.4s ease;
+        cursor: pointer;
+        border-radius: 10px;
+        border-width: 1px;
     }
-    .mastcontent {
+    .page_nav_cont:hover {
+        height: 60vh;
+    }
+    .page_nav_cont:hover .page_nav {
+        margin-right: -30px;
+    }
+    .page_nav_sect:hover {
+        width: 30px;
+    }
+    .page_nav {
+        height: 15vh;
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .page_nav_sect {
+        width: 80%;
+        height: 25%;
+        display: inline-block;
+        margin: 0;
+        margin-bottom: -1%;
+        transition: all 0.2s ease;
+    }
+    .two {
+        border-color: black;
+    }
+    
+    .four {
+        border-color: black;
+    }
+    
+    .two .page_nav {
+        margin-top: 15vh;
+        margin-left: 0;
+        background: black;
+    }
+    
+    .three .page_nav {
+        margin-top: 30vh;
+        margin-left: 0;
+    }
+    
+    .four .page_nav {
+        background: black;
+        margin-left: 0;
+        margin-top: 44.7vh;
+    }
+    .masthead .mastcontent {
         box-shadow: none!important;
+        margin-top: auto;
     }
+    .masthead .mastcontent:hover {
+        margin-top: auto!important;
+    }
+    /*.masthead .mastcontent:hover {
+        margin-top: auto!important;
+    }*/
     #work_top {
         margin: 0 auto!important;
     }
-
     .bottomRightIcons img {
         height: 80px;
         width: 80px;
     }
-
     .bottomRightIcons {
         padding-right: 30px;
         margin-top: -125px;
     }
-
     .btn {
         display: none;
     }
 }
 
-@media (min-width: 1200px) { }
+@media screen and (max-width: 600px) {
+    .masthead .mastcontent {
+        width: 80vw;
+        height: 30vh;
+        margin-top: auto!important;
+    }
+    .masthead .mastcontent:hover {
+        margin-top: auto!important;
+    }
+    .mastcontent h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1200px) {}
