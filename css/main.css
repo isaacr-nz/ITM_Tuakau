@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@1,700&display=swap');
+
 body {
     padding: 0;
     margin: 0;
@@ -224,12 +222,14 @@ button:focus {
 .mastcontent h1 {
     font-size: 72px;
     color: black;
-    font-family: Tinos;
+    font-family: 'Tinos', serif;
+    font-style: italic;
     font-weight: 900;
 }
 
 .mastcontent h3 {
-    font-size: 22px;
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
     font-style: italic;
 }
 
@@ -450,6 +450,9 @@ button:focus {
     .work_main {
         height: 60vh;
     }
+    .mastcontent h1 {
+        font-size: 40px;
+    }
     .navbar-nav {
         width: 100%;
         height: 100%;
@@ -554,8 +557,8 @@ button:focus {
         width: 80vw;
         height: 30vh;
         margin-top: auto!important;
-        padding: 50px;
-        padding-top: 75px;
+        padding: 25px;
+        padding-top: 10vh;
         background-size: 50px;
     }
     .masthead .mastcontent:hover {
@@ -564,8 +567,12 @@ button:focus {
     .mastcontent h1 {
         font-size: 32px;
     }
+    .mastcontent h3 {
+        font-size: 16px;
+    }
     .bigText {
-        font-size: 60px;
+        font-size: 40px;
+        margin-top: 20vh;
     }
 }
 
