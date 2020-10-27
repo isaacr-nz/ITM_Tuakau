@@ -33,11 +33,11 @@ button:focus {
     font-family: Archivo Black;
     font-size: 24px;
     color: white!important;
-    transition: all 2s ease;
+    transition: color .5s ease;
 }
 
 .navbar-nav {
-    transition: all 0.4s ease;
+    transition: height 0.4s ease;
     width: fit-content;
 }
 
@@ -46,7 +46,7 @@ button:focus {
 }
 
 .nav-link {
-    transition: all 0.4s ease;
+    transition: color 0.4s ease;
 }
 
 
@@ -93,7 +93,6 @@ button:focus {
 }
 
 .navbar-toggler-icon {
-    transition: all .8s ease;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")!important;
 }
 
@@ -115,11 +114,10 @@ button:focus {
     left: calc(50vw - 250px);
     margin-top: calc(50vh - 250px);
     margin-bottom: 25px;
-    transition: all 0.4s ease;
+    transition: border 0.4s ease;
     cursor: pointer;
     border-radius: 10px;
     border: 2px solid white;
-    opacity: 0.5;
 }
 
 .page_nav_cont:hover {
@@ -139,7 +137,7 @@ button:focus {
     display: block;
     background: white;
     clear: both;
-    transition: all 0.4s ease;
+    transition: margin-left 0.4s ease;
     margin-bottom: -17px;
 }
 
@@ -204,21 +202,11 @@ button:focus {
     -moz-box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 0.2);
     margin-top: calc(50vh - 200px)!important;
-    transition: all 0.3s ease;
     max-width: 700px;
-    animation-name: pulse, fadeInUp;
-    animation-delay: 1.5s, 0s;
-    animation-duration: .5s, 1s;
+    animation-name: fadeInUp;
+    animation-delay: 1s;
+    animation-duration: 1s;
 }
-
-.masthead .mastcontent:hover {
-    margin-top: calc(50vh - 225px)!important;
-    -webkit-box-shadow: 60px 60px 0px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 60px 60px 0px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 60px 60px 0px 0px rgba(0, 0, 0, 0.2);
-    transform: scale(1.2). skewX(5deg);
-}
-
 .mastcontent h1 {
     font-size: 72px;
     color: black;
@@ -236,7 +224,7 @@ button:focus {
 .mastcontent .btn {
     font-family: Archivo Black;
     font-weight: 300;
-    transition: all 0.2s ease;
+    transition: background 0.2s ease;
 }
 
 .mastcontent .btn:hover {
@@ -268,7 +256,7 @@ button:focus {
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transition: all .2s ease-out;
+    transition: transform .2s ease-out;
 }
 
 .siteSmallImg:hover {
@@ -283,8 +271,13 @@ button:focus {
     height: 120px;
 }
 
-.bigText {
-    margin-top: 96px;
+.table_align {
+    display: table;
+}
+
+.table_align .content {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .bigText {
@@ -309,7 +302,7 @@ button:focus {
     vertical-align: middle;
 }
 
-.contact_row .col-12-md h1 {
+.bubble {
     font-family: Archivo Black;
     width: fit-content;
     margin: 0 auto;
@@ -317,9 +310,12 @@ button:focus {
     border-radius: 50px;
     background: #287acc;
     color: white;
+}
+
+.contact_row .col-12-md h1 {
     font-size: 30px;
     margin-bottom: 500px;
-    transition: all 1.5s ease;
+    transition: margin-bottom 1.5s ease;
 }
 
 .active .contact_row .col-12-md h1 {
@@ -329,7 +325,7 @@ button:focus {
 .swipe_icon {
     display: none;
     margin-top: 0;
-    transition: all 2s ease;
+    transition: margin-top 2s ease;
 }
 
 .active .swipe_icon {
@@ -345,13 +341,6 @@ button:focus {
     min-width: 360px;
     margin: 0 auto;
     font-family: Rubik;
-    -webkit-box-shadow: 124px 123px 0px -45px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 124px 123px 0px -45px rgba(0, 0, 0, 0.4);
-    box-shadow: 124px 123px 0px -45px rgba(0, 0, 0, 0.4);
-    transition: all 1.5s ease;
-}
-
-.active .contact_window {
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
@@ -394,7 +383,7 @@ button:focus {
     font-family: Archivo Black;
     text-align: center;
     border-radius: 70px;
-    transition: all 2s ease;
+    transition: margin 2s ease;
 }
 
 #work_top h1 {
@@ -403,18 +392,19 @@ button:focus {
 }
 
 .active .work_main {
-    -webkit-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+
     margin-top: 15px;
     margin-left: 10vw!important;
 }
 
 .work_main {
+    -webkit-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
     height: 550px;
     width: 80vw;
     margin-top: -10px;
-    transition: all 1s ease;
+    transition: margin 1s ease;
     margin-left: calc(10vw - 35px)!important;
 }
 
@@ -441,12 +431,11 @@ button:focus {
     position: relative;
     height: 0;
     overflow: hidden;
-    transition: all .2s ease;
 }
 
 @media (min-width: 576px) {}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .work_main {
         height: 60vh;
     }
@@ -472,7 +461,7 @@ button:focus {
         top: 20vh;
         left: auto;
         margin: 0;
-        transition: all 0.4s ease;
+        transition: height 0.4s ease;
         cursor: pointer;
         border-radius: 10px;
         border-width: 1px;
@@ -482,9 +471,6 @@ button:focus {
     }
     .page_nav_cont:hover .page_nav {
         margin-right: -30px;
-    }
-    .page_nav_sect:hover {
-        width: 30px;
     }
     .page_nav {
         height: 15vh;
@@ -498,7 +484,7 @@ button:focus {
         display: inline-block;
         margin: 0;
         margin-bottom: -1%;
-        transition: all 0.2s ease;
+        transition: width 0.2s ease;
     }
     .two {
         border-color: black;
