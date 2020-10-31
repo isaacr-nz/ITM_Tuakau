@@ -1,15 +1,28 @@
 
-body {
+body, html {
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 button:focus {
     outline: none;
 }
 
-.main section:nth-child(3) {
-    background: #3399ff;
+#section3 {
+    background: #3399ff!important;
+}
+
+#section4 {
+    background: white;
+}
+
+.main > div {
+    height: 100vh!important;
+    width: 100vw;
 }
 
 .pressed {
@@ -22,6 +35,56 @@ button:focus {
 
 /* Navbar */
 
+.well {
+	position: relative;
+    overflow-x: hidden;
+    height: 100vh;
+    transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(300px);
+    scroll-snap-type: y mandatory;
+}
+
+.panel {
+	position: relative;
+    height: 100vh;
+    width: 100vw;
+	font-size: 10vmin;
+	padding: 1em;
+	box-sizing: border-box;
+	color: hsla(0, 0%, 100%, .1);
+    cursor: default;
+    scroll-snap-align: center;
+}
+
+
+
+
+
+.panel:nth-child(1) {
+    background: #3399ff;
+    background: url("../img/drawing.svg") no-repeat center center, #3399ff ;
+    background-size: 400% auto;
+    -webkit-animation-name: backgroundEffect;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes backgroundEffect {
+    0% {background-size: 300% auto }
+    100% {background-size: 100% auto }
+  }
+.panel:nth-child(2) {
+	background: rgb(255, 255, 255);
+}
+.panel:nth-child(3) {
+	background: #3399ff;
+}
+.panel:nth-child(4) {
+	background: #3399ff;
+}
+
 .navbar {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -30,23 +93,16 @@ button:focus {
 }
 
 .navbar-brand {
-    font-family: Archivo Black;
+    font-family: Rubik;
+    font-weight: 700;
     font-size: 24px;
-    color: white!important;
+    color: white;
     transition: color .5s ease;
 }
 
 .navbar-nav {
     transition: height 0.4s ease;
     width: fit-content;
-}
-
-.show .navbar-nav {
-
-}
-
-.nav-link {
-    transition: color 0.4s ease;
 }
 
 
@@ -59,21 +115,7 @@ button:focus {
     color: black!important;
 }
 
-.other .container .navbar-brand {
-    color: black!important;
-}
 
-.other .container .navbar-collapse .navbar-nav .nav-item .nav-link {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.other .container .navbar-collapse .navbar-nav .active .nav-link {
-    color: #000000!important;
-}
-
-.other .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-    color: #000000;
-}
 
 .container .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: rgba(255, 255, 255, 0.5);
@@ -153,63 +195,25 @@ button:focus {
     margin-left: 1px;
 }
 
-.two {
-    border-color: black;
-}
 
-.four {
-    border-color: black;
-}
-
-.two .page_nav {
-    margin-left: 125px;
-    background: black;
-}
-
-.three .page_nav {
-    margin-left: 250px;
-}
-
-.four .page_nav {
-    background: black;
-    margin-left: 375px;
-}
 
 /* MASTHEAD */
 
 .masthead {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: rgb(51, 153, 255);
-    background: #3399ff;
+    background: rgba(255,255,255,0);
 }
 
 .masthead .mastcontent {
-    padding: 100px;
-    padding-bottom: 75px;
+    padding: 25px;
     font-family: Roboto;
-    background: white;
-    max-height: 400px;
+    color: white!important;
+    width: fit-content;
     text-align: center;
-    border: solid 4px #3399ff;
-    color: #3399ff!important;
-    background-image: url("../img/buttons.svg");
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    background-size: 80px;
-    background-position: 10px 15px;
-    -webkit-box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 35px 35px 0px 0px rgba(0, 0, 0, 0.2);
-    margin-top: calc(50vh - 200px)!important;
-    max-width: 700px;
-    animation-name: fadeInUp;
-    animation-delay: 1s;
-    animation-duration: 1s;
 }
 .mastcontent h1 {
-    font-size: 72px;
-    color: black;
+    font-size: 8rem;
     font-family: 'Tinos', serif;
     font-style: italic;
     font-weight: 900;
@@ -218,7 +222,6 @@ button:focus {
 .mastcontent h3 {
     font-size: 20px;
     font-family: 'Rubik', sans-serif;
-    font-style: italic;
 }
 
 .mastcontent .btn {
@@ -245,6 +248,7 @@ button:focus {
     height: 800px;
     background: white;
     width: 100%;
+    color: black;
 }
 
 .content p {
@@ -285,6 +289,7 @@ button:focus {
     font-size: 64px;
     font-family: Tinos;
     font-weight: bolder;
+    text-align: center;
 }
 
 .contact_row {
@@ -312,13 +317,8 @@ button:focus {
     color: white;
 }
 
-.contact_row .col-12-md h1 {
+#contact_text {
     font-size: 30px;
-    margin-bottom: 500px;
-    transition: margin-bottom 1.5s ease;
-}
-
-.active .contact_row .col-12-md h1 {
     margin-bottom: 10px;
 }
 
@@ -366,24 +366,15 @@ button:focus {
     box-shadow: 50px 50px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-.active #work_top {
-    margin-top: calc(96px + 25px)!important;
-    margin-bottom: 10px;
-    margin-left: -28px;
-}
-
 #work_top {
     width: fit-content;
     padding: 10px 25px;
     background: #287acc;
     color: white;
     border-radius: 10px;
-    margin-top: 91px;
-    margin-bottom: 60px;
     font-family: Archivo Black;
     text-align: center;
     border-radius: 70px;
-    transition: margin 2s ease;
 }
 
 #work_top h1 {
@@ -391,21 +382,14 @@ button:focus {
     font-size: 28px;
 }
 
-.active .work_main {
-
-    margin-top: 15px;
-    margin-left: 10vw!important;
-}
-
 .work_main {
     -webkit-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 15px 15px 0px 0px rgba(0, 0, 0, 0.2);
-    height: 550px;
-    width: 80vw;
-    margin-top: -10px;
     transition: margin 1s ease;
-    margin-left: calc(10vw - 35px)!important;
+    margin-top: 15px;
+    height: 500px;
+    width: 70vw;
 }
 
 .triangle {
@@ -430,7 +414,6 @@ button:focus {
 .collapsing {
     position: relative;
     height: 0;
-    overflow: hidden;
 }
 
 @media (min-width: 576px) {}
