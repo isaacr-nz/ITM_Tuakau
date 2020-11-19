@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img class="my-auto" height="50" src="img/logo_medium.jpg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <p id="slogan">OVER 85 YEARS SERVING LOCALS</p>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item {% if page.title == 'Home' %}active{% endif %}">
+                    <a class="nav-link" href="index.html">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item {% if page.title == 'Sheds' or page.title == 'Tanks' %}active{% endif %}">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="sheds">SHEDS</a>
+                            <a class="dropdown-item" href="tanks">TANKS</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item {% if page.title == 'Hireage' %}active{% endif %}">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="hireage">HIREAGE</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item {% if page.title == 'Staff' %}active{% endif %}">
+                    <a class="nav-link" href="staff">STAFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -4,11 +4,13 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@600&family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+ body {
+     font-family: 'Nunito Sans';
+ }
+
 .navbar,
 h1,
 h2,
@@ -45,26 +47,37 @@ a:hover {
 
 /* BUTTON */
 
+button {
+    border: none;
+}
+
 .contentButton {
-	background:linear-gradient(to bottom, #4f4f4f 5%, #1f1f1f 100%);
-	background-color:#4f4f4f;
-	border-radius:0px;
-	border:1px solid #1f1f1f;
+    background: black;
+    background-image: linear-gradient(45deg, rgba(254,242,0,1) 0%, rgba(254,242,0,1) 75%, rgba(0,0,0,1) 75%);
+background-position: -200px 0px;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+	border: 1px solid black;
 	display:inline-block;
 	cursor:pointer;
-	color:#fef100;
-	font-family:Titillium Web;
-	font-size:18px;
-	font-weight:bold;
+	color:#fef200;
+	font-family:'Nunito Sans';
+	font-size:22px;
+	font-weight:800;
 	padding:6px 18px;
 	text-decoration:none;
-    text-shadow:0px -1px 0px #1f1f1f;
     margin: 0 auto;
     display: block;
 }
 .contentButton:hover {
-	background:linear-gradient(to bottom, #1f1f1f 5%, #4f4f4f 100%);
-	background-color:#1f1f1f;
+    background-position: 0px 0px;
+    background-size: 150%;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
+.contentButton:hover > a {
+    color: black;
 }
 .contentButton:active {
 	position:relative;
@@ -74,7 +87,7 @@ a:hover {
 /* END BUTTON */
 
 .nav-item {
-    transition: all 0.2s ease-in;
+    transition: background 0.2s ease-in;
     border-bottom: 3px solid black;
 }
 
@@ -113,16 +126,22 @@ border-radius: 0;
     border-color: #fef200;
 }
 
+.rounded {
+    width: 200px!important;
+}
+
 body {
-    background: #f8f8f8;
-    font-family: Source Sans Pro!important;
+    background: #ececec;
 }
 
 .section {
-    background: #fff;
-    padding: 25px;
-    height: 100%;
-    box-shadow: 0px 6px 22px -10px rgba(0,0,0,0.3);
+    background: #ececec;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.section p {
+    font-size: 18px;
 }
 
 
@@ -138,16 +157,19 @@ margin-top: -48px;
 
 
 h1 {
-    font-family: Bree Serif!important;
+    font-family: 'Nunito Sans'!important;
     font-size: 4rem!important;
+    font-weight: bold;
 }
 
 h2 {
-    font-family: Titillium Web!important;
+    font-family: 'Nunito Sans'!important;
+    font-weight: 800;
 }
 
 h4 {
-    font-family: Titillium Web!important;
+    font-family: 'Nunito Sans'!important;
+    font-weight: bold;
 }
 
 a.dropdown-item:active,
@@ -161,27 +183,7 @@ a.dropdown-item:active,
 }
 
 
-/* mobile/small screen css */
 
-@media screen and (max-width: 767px) {
-    .navbar-brand img {
-        height: 25px;
-    }
-    .navbar {
-        min-height: 76px;
-    }
-    .table {
-        width: 75%;
-        margin: 0 auto!important;
-    }
-    .bg-primary h1 {
-        font-size: 3rem!important;
-        text-align: center;
-    }
-    .neg-margin {
-        margin-top: 0!important;
-    }
-}
 /* end @media */
 
 
@@ -238,7 +240,7 @@ body>div>div:nth-child(1)>div.col-md-8.mb-5>a {
 }
 
 .navbar-brand {
-    font-family: EurostileLTStd-BoldCn;
+    font-family: 'Nunito Sans';
     color: #fef200!important;
     font-size: 2.5rem!important;
 }
@@ -254,7 +256,7 @@ body>header>div>div>div>p>i {
 .navbar {
     background: black!important;
     font-weight: bold;
-    font-family: Titillium Web!important;
+    font-family: 'Titillium Web'!important;
 }
 
 .text-white-50 {
@@ -269,7 +271,7 @@ body>header>div>div>div>p>i {
 }
 
 table>tbody>tr td:nth-child(1) {
-    font-family: Titillium Web!important;
+    font-family: 'Nunito Sans'!important;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -316,6 +318,11 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
 .card {
     background: #fff;
     border: none;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .list-group-item {
@@ -337,8 +344,7 @@ body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
 #paper {
     height: auto;
     width: 100%;
-    background: rgb(122,114,102);
-background: linear-gradient(90deg, rgba(122,114,102,1) 0%, rgba(225,204,168,1) 40%, rgba(225,204,168,1) 60%, rgba(122,114,102,1) 100%);
+    background: rgb(60, 60, 60);
 }
 
 .bg-primary {
@@ -385,9 +391,59 @@ background: linear-gradient(90deg, rgba(122,114,102,1) 0%, rgba(225,204,168,1) 4
 }
 
 .container-footer {
-    max-width: 920px!important;
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+#slogan{
+    font-style: italic;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    font-family: 'Titillium Web';
 }
 
 body>footer {
     background: black!important;
+}
+
+
+
+
+
+
+
+
+
+/* mobile/small screen css */
+
+@media screen and (max-width: 1199px) {
+    #slogan {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding: 25px;
+    }
+    .navbar-brand img {
+        height: 25px;
+    }
+    .navbar {
+        min-height: 76px;
+    }
+    .table {
+        width: 75%;
+        margin: 0 auto!important;
+    }
+    .bg-primary h1 {
+        font-size: 3rem!important;
+        text-align: center;
+    }
+    .neg-margin {
+        margin-top: 0!important;
+    }
 }

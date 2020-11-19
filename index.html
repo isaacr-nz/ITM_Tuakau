@@ -1,85 +1,166 @@
----
-layout: default
-title: isaacr.online
----
-<div class="well" id="well">
-    <section id="section1" class="panel">
-        <div class="masthead">
+<!DOCTYPE html>
+<html lang="en">
 
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="mastcontent m-auto">
-                        <h1 class="text_logo">Welcome to my Portfolio
-                        </h1>
-                        <h3>Sample text bla bla bla</h3>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isaacr</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
 
-                </div>
+<body>
+    <nav>
+        <div class="navContainer">
+            <div class="brand link">
+                <span class="vertAlign"></span><img src="img/logo.svg" height="25" alt="">
             </div>
-        </div>
+            <div class="menu link"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </div>
+            <div class="page">
 
-        <div class="col-12 text-center swipe_icon">
-            <img src="./img/swipe_up.svg" class="" id="swipe_icon_img" alt="" height="100" width="100">
-        </div>
-
-        <div class="col-12 text-right float-right bottomRightIcons">
-            <img src="./img/shoplocal.svg" style="margin-right: 10px;" height="100" width="100" alt="">
-            <img src="./img/nzm.svg" style="margin-right: 10px;" height="100" width="100" alt="">
-        </div>
-    </section>
-    <section id="section2" class="table_align p-two panel">
-        <div class="container-sm content h-auto">
-            <div class="row">
-                <div class="col-md-10 mx-auto px-5">
-                    <h1 class="bigText">Digital solutions tailored to your specific needs</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 mx-auto px-5">
-                    <p>Whether you need a new logo or a full featured website, I've got you covered. With over 3 years
-                        experience in design and web development I can customise any project to your specific
-                        requirements.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 px-5 mx-auto mb-3">
-                    <h5 class="bubble">
-                        Start Here!
-                    </h5>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="section3"class="panel">
-        <div class="row h-100">
-            <div class="col-10-lg m-auto">
-                <div id="work_top">
-                    <h1>MY WORK</h1>
+                <div class="currentPage link">
+                    / HOME
                 </div>
 
-                <div class="window work_main col-10-lg mx-auto">
-                </div>
+            </div>
+            <ul class="navigation">
+                <li class="active link"><a href="#">/ HOME</a></li>
+                <li class="link"><a href="#">/ ABOUT</a></li>
+                <li class="link"><a href="#">/ WORK</a></li>
+                <li class="link"><a href="#">/ CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="shape circle">
+            <div class="arrow"> &darr;</div>
+        </div>
+        <div class="container">
+            <div class="t1 link">
+                <h1>WELCOME TO MY PORTFOLIO.</h1>
+            </div>
+            <div class="t2 link">
+                <h1>I MAKE STUFF FOR THE WEB.</h1>
             </div>
         </div>
     </section>
-    <section id="section4"class="panel">
-        <div class="container h-100">
-            <div class="row contact_row">
-                <div class="col-12-md m-auto">
+    <section>
+        <div class="shape"></div>
 
-                    <h1 class="bubble" id="contact_text">Contact Me
-                        <div class="tr2"></div>
-                    </h1>
-                    <div class="contact_window">
-
-                        <h3><a href="href=" mailto:contact@isaacr.online>contact@isaacr.online</a></h3>
-
-                        <h3>Ph: 02108757087</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
-</div>
+    <section>
+        <div class="shape triangle"></div>
+    </section>
+    <footer>
+        <div class="footerContainer">
+            THIS WEBSITE IS A WORK IN PROGRESS (many things may be broken/missing)
+        </div>
+    </footer>
+    <div class="cursor"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"
+        integrity="sha512-+VS2+Nl1Qit71a/lbncmVsWOZ0BmPDkopw5sXAS2W+OfeceCEd9OGTQWjgVgP5QaMV4ddqOIW9XLW7UVFzkMAw=="
+        crossorigin="anonymous"></script>
+    <script>
 
-<!-- END Masthead -->
+        $(document).ready(function () {
+            
+            $(".circle").velocity({
+                p: {backgroundColor: "white", height: "535px", width: "565px"},
+                o: {delay: 500, duration: 2500}
+            }).velocity({
+                p: {height: "560px", width: "515px"},
+                o: {duration: 2000, loop: true}
+            });
+
+            const ENABLE_HOVER_DELAY = 500;
+            let timer;
+            window.addEventListener('scroll', function () {
+                const bodyClassList = document.body.classList;
+                // clear previous timeout function
+                clearTimeout(timer);
+
+                if (!bodyClassList.contains('disable-hover')) {
+                    // add the disable-hover class to the body element
+                    bodyClassList.add('disable-hover');
+                }
+
+                timer = setTimeout(function () {
+                    // remove the disable-hover class after a timeout of 500 millis
+                    bodyClassList.remove('disable-hover');
+                }, ENABLE_HOVER_DELAY);
+
+            }, false);
+
+            $(".menu").on("click", function () {
+                
+                if ($("nav").hasClass("open")) {
+                    $("nav").toggleClass("open").velocity("reverse", 150);
+                    $(".navContainer").velocity({maxWidth: "960px"}, 100);
+                } else {
+                    $("nav").toggleClass("open").velocity({height: "500px"}, 250);
+                    $(".navContainer").velocity({maxWidth: "100vw"}, 100);
+                }
+                
+            });
+
+            var cursor = $(".cursor");
+
+            $(window).mousemove(function (e) {
+                cursor.css({
+                    top: e.clientY - cursor.height() / 2,
+                    left: e.clientX - cursor.width() / 2
+                });
+            });
+
+            $(window)
+                .mouseleave(function () {
+                    cursor.css({
+                        opacity: "0"
+                    });
+                })
+                .mouseenter(function () {
+                    cursor.css({
+                        opacity: "1"
+                    });
+                });
+
+            $(".link")
+                .mouseenter(function () {
+                    cursor.css({
+                        transform: "scale(3.2)"
+                    });
+                })
+                .mouseleave(function () {
+                    cursor.css({
+                        transform: "scale(1)"
+                    });
+                });
+
+            $(window)
+                .mousedown(function () {
+                    cursor.css({
+                        transform: "scale(.2)"
+                    });
+                })
+                .mouseup(function () {
+                    cursor.css({
+                        transform: "scale(1)"
+                    });
+                });
+        });
+    </script>
+</body>
+
+</html>

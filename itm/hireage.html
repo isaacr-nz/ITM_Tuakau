@@ -1,23 +1,9 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Tuakau ITM | Hireage</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://www.itm.co.nz/themes/portal/img/favicon2.png">
-
-</head>
-<body id="">
-    
-
+---
+layout: default
+title: Hireage
+header_title: HIREAGE
+number: 3
+---
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
@@ -67,16 +53,7 @@
   </div>
 </nav>
 
-  <!-- Header -->
-  <header class="bg-primary bg darkened py-5 mb-5">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-lg-12">
-          <h1 class="display-4 text-white mt-5 mb-2 animate__animated animate__fadeInUp">HIREAGE</h1>
-        </div>
-      </div>
-    </div>
-  </header>
+{% include pages_header.html %}
 
 <!-- Page Content -->
 <div class="container">
@@ -97,11 +74,9 @@
         site or property! </p><p> We have different loan trailer options available, just in get in touch with us today to see
         what’s available and how we can assist you.</p>
 
-      <a href="#" class="text-center">
-        <h4>Contact Us</h4>
-      </a>
+        <button href="contact.html" class="contentButton">Contact Us</button>
     </div>
-    <div class="col-md-4 mb-5 dark-side-panel">
+    <div class="col-md-4 mb-5 dark-side-panel my-auto">
 
       <h4>Our Range</h4>
       <ul class="list-group list-group-flush text-center align-items-center" style="max-width: 18rem;margin: 0 auto;">
@@ -121,56 +96,10 @@
   <!-- /.row -->
   <!-- /.row -->
 </div>
-<div class="container container-footer">
-  <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md">
-          <img class="mb-2" src="https://www.itm.co.nz/themes/portal/img/logo-tagline.png" alt="">
-          <small class="d-block mb-3 text-muted">© 2020</small>
-          <small class="d-block mb-3 text-muted">created by <a href="https://www.isaacr.online/">Isaac R</a> </small>
-        </div>
-        <div class="col-6 col-md">
-          <h4>More</h4>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="https://www.itm.co.nz/Category?Action=View&Category_id=31">Trade</a></li>
-            <li><a class="text-muted" href="https://www.itm.co.nz/Category?Action=View&Category_id=38">DIY</a></li>
-            <li><a class="text-muted" href="https://www.itm.co.nz/Category?Action=View&Category_id=87">Store Locator</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h4>About</h4>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="https://www.itm.co.nz/">News</a></li>
-            <li><a class="text-muted" href="https://www.itm.co.nz/Category?Action=View&Category_id=45">About ITM</a>
-            </li>
-            <li><a class="text-muted" href="https://www.itm.co.nz/Category?Action=View&Category_id=85">Terms and
-                Conditions</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
+{% include footer.html %}
 <!-- /.container -->
 
 <!-- Footer -->
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom Javascript -->
-  <script>
-$(document).ready(function() {
-    $(".nav-item").hover( function(){
-        $(".nav-item").removeClass("active");
-        $(this).addClass("active");
-    });
-    $(".nav-item").mouseleave( function(){
-        $(".nav-item").removeClass("active");
-        $(".nav-item:nth-child( 3 )").addClass("active");
-    });
-});
-</script>
-</body>
-</html>
