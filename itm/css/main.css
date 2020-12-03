@@ -1,0 +1,453 @@
+/*!
+ * Start Bootstrap - Business Frontpage (https://startbootstrap.com/templates/business-frontpage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,700;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap');
+
+ body {
+     font-family: 'Nunito Sans';
+ }
+
+.navbar,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    color: #4b4b4b;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0074e0;
+}
+
+
+/* BUTTON */
+
+button {
+    border: none;
+}
+
+button a {
+    color: inherit;
+}
+
+.contentButton {
+    background: black;
+    background-image: linear-gradient(45deg, rgba(254,242,0,1) 0%, rgba(254,242,0,1) 75%, rgba(0,0,0,1) 75%);
+background-position: -200px 0px;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+	border: 1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#fef200;
+	font-family:'Nunito Sans';
+	font-size:22px;
+	font-weight:800;
+	padding:6px 18px;
+	text-decoration:none;
+    margin: 0 auto;
+    display: block;
+}
+.contentButton:hover {
+    background-position: 0px 0px;
+    background-size: 150%;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
+.contentButton:hover > a {
+    color: black;
+}
+.contentButton:active {
+	position:relative;
+	top:1px;
+}
+
+/* END BUTTON */
+
+.nav-item {
+    transition: background 0.2s ease-in;
+    border-bottom: 3px solid black;
+}
+
+.nav-item:hover {
+    border-bottom: 3px solid #fef200;
+    background: rgb(37,37,37);
+background: linear-gradient(41deg, rgba(37,37,37,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.nav-item.active {
+    color: #fff!important;
+    border-bottom: 3px solid #fef200;
+    background: linear-gradient(41deg, rgba(37,37,37,.75) 0%, rgba(0,0,0,1) 100%);
+}
+
+.active > .dropdown > .nav-link {
+    color: white;
+}
+
+.nav-link {
+-webkit-appearance: none;
+border-radius: 0;
+}
+
+.dark-side-panel {
+    background: #1c1c1c;
+    color: white;
+    padding: 25px 35px;
+}
+
+.dark-side-panel a, .card a {
+    color: #fef200;
+}
+
+.dark-side-panel > hr {
+    border-color: #fef200;
+}
+
+.rounded {
+    width: 200px!important;
+}
+
+body {
+    background: #ececec;
+}
+
+.section {
+    background: #ececec;
+    padding: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.section p {
+    font-size: 18px;
+}
+
+
+
+iframe {
+top: 0;
+left: 0;
+display: block;
+width: 100% !important;
+height: 400px !important;
+margin-top: -48px;
+}
+
+
+h1 {
+    font-family: 'Nunito Sans'!important;
+    font-size: 4rem!important;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Nunito Sans'!important;
+    font-weight: 800;
+}
+
+h4 {
+    font-family: 'Nunito Sans'!important;
+    font-weight: bold;
+}
+
+a.dropdown-item:active,
+.dropdown-item.active {
+    background: black;
+    color: #fef200;
+}
+
+.navbar-brand img {
+    display: block;
+}
+
+
+
+/* end @media */
+
+
+button:focus {
+    outline: 5px auto #fef200;
+}
+
+.table {
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    border-width: 0;
+    background: transparent!important;
+    color: white;
+}
+
+
+.table tr:hover {
+    background: rgb(29, 29, 29);
+}
+
+.table td {
+    border-top: 0px;
+}
+
+.btn-primary {
+    box-shadow: inset 0px 0px 8px 1px #23395e;
+    background: linear-gradient(to bottom, #ffffff 5%, #e8e8e8 100%);
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #1f2f47;
+    color: #000000;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to bottom, #e8e8e8 5%, #ffffff 100%);
+    background-color: #e8e8e8;
+}
+
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-8.mb-5>img {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>h4 {
+    text-align: center;
+}
+
+body>div>div:nth-child(1)>div.col-md-8.mb-5>a {
+    margin-top: 25px;
+}
+
+.navbar-brand {
+    font-family: 'Nunito Sans';
+    color: #fef200!important;
+    font-size: 2.5rem!important;
+}
+
+.display-4 {
+    font-size: 3rem;
+}
+
+body>header>div>div>div>p>i {
+    font-size: 1rem;
+}
+
+.navbar {
+    background: black!important;
+    font-weight: bold;
+    font-family: 'Titillium Web'!important;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, 0.9)!important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #fef200!important;
+}
+
+table>tbody>tr td:nth-child(1) {
+    font-family: 'Nunito Sans'!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fef200!important;
+}
+
+.navbar-dark .navbar-nav .active .nav-link:focus,
+.navbar-dark .navbar-nav .active .nav-link:hover {
+    color: #fff!important;
+}
+
+.navbar .show {
+    color: #fef200!important;
+}
+
+body>header {
+    height: 400px;
+}
+
+.table td {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+
+/**
+body>div:nth-child(3)>div:nth-child(1)>div.col-md-4.mb-5>table {
+    border-collapse: separate !important;
+    border-radius: 8px!important;
+    -webkit-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 9px -2px rgba(0, 0, 0, 0.75);
+}
+**/
+
+.card-footer {
+    text-align: center;
+    background: white;
+    border: none;
+    padding-bottom: 25px;;
+}
+
+.card {
+    background: #fff;
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.list-group-item {
+    background: none;
+    color: rgb(228, 228, 228);
+    border-color: rgb(78, 78, 78);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.bg-primary h1 {
+    font-family: Titillium Web!important;
+}
+
+.bg-primary h1 strong{
+    color: #fef200;
+}
+
+#paper {
+    height: auto;
+    width: 100%;
+    background: rgb(60, 60, 60);
+}
+
+.bg-primary {
+
+    margin-top: 76px;
+    height: 400px;
+    background: black!important;
+    background: linear-gradient(0deg, #fef10030, rgba(0, 0, 0, 0.3)),url("../img/header.jpg") center bottom no-repeat black!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bridge {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.459), #fef10060),url("../img/bridge_bg.jpg") center center no-repeat black!important;
+    background-size: contain;
+    
+}
+
+.card-img-top {
+    border-left: 6px solid #fef200;
+}
+
+.neg-margin {
+    margin-top: -140px;
+}
+
+#paper > div > div > div > div > img {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: none;
+    margin-top: 76px;
+}
+
+.darkened {
+    margin-top: 76px;
+    height: 200px;
+    background: linear-gradient(0deg,  rgba(0, 0, 0, 1), #fef10050), black url(../img/bg-wood-dark-wide.jpg)center center no-repeat!important;
+}
+
+.container-footer {
+    width: 100%;
+    background: black;
+    color: white;
+}
+
+#slogan{
+    font-style: italic;
+    color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    font-family: 'Titillium Web';
+}
+
+body>footer {
+    background: black!important;
+}
+
+
+
+
+
+
+
+
+
+/* mobile/small screen css */
+
+@media screen and (max-width: 1199px) {
+    #slogan {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        padding: 25px;
+    }
+    .navbar-brand img {
+        height: 25px;
+    }
+    .navbar {
+        min-height: 76px;
+    }
+    .table {
+        width: 75%;
+        margin: 0 auto!important;
+    }
+    .bg-primary h1 {
+        font-size: 3rem!important;
+        text-align: center;
+    }
+    .neg-margin {
+        margin-top: 0!important;
+    }
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tuakau ITM | Tanks</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://www.itm.co.nz/themes/portal/img/favicon2.png">
+
+</head>
+<body id="">
+    
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img class="my-auto" height="50" src="img/logo_medium.jpg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <p id="slogan">OVER 85 YEARS SERVING LOCALS</p>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">HOME
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="sheds">SHEDS</a>
+                            <a class="dropdown-item" href="tanks">TANKS</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="hireage">HIREAGE</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="staff">STAFF</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Header -->
+  <header class="bg-primary bg darkened py-5 mb-5">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-12">
+          <h1 class="display-4 text-white mt-5 mb-2 animate__animated animate__fadeInUp">TANKS</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- Page Content -->
+<div class="container">
+
+  <div class="row">
+    <div class="section col-md-8">
+      <h2>View Our Range</h2>
+      <p><i>Our staff know their tanks.</i> We can supply a large range of water storage tanks to suit every need. From
+        residential rain water collection to various commercial and farm applications. Tanks can be delivered to site
+        and placed in position if required.
+      </p>
+      <p>
+        It’s not just water storage solutions we can help with. We have options for fuel storage, molasses, colostrum
+        and even wine. Call in and see us at Tuakau ITM or click here to email us.
+      </p>
+      <img src="img/slimline1.jpg" alt="Slimline Tanks" width="600" class="img-fluid">
+    </div>
+    <div class="dark-side-panel col-md-4 text-center">
+      <img src="img/devan_logo.png" alt="Devan Tanks" width="114" class="img-fluid"><br><br>
+      <img src="img/slimtank2.png" alt="" width="300" class="img-fluid">
+      
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- /.row -->
+</div>
+<div class="container-footer">
+    <footer class="py-5 mt-md-5 border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img src="img/logo.svg" height="40" alt="">
+                    <small class="d-block mb-3 text-muted">ITM © 2020</small>
+                    
+                    </small>
+                </div>
+                <div class="col-6 col-md">
+                    <h4>More</h4>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="https://www.itm.co.nz/Building-Business-News">ITM News</a></li>
+                        <li><a class="text-muted" href="https://www.itm.co.nz/What-We-re-Made-Of/ITM-Support-Services">What We're Made Of</a></li>
+                        <li><a class="text-muted" href="https://www.itm.co.nz/Terms-Conditions">Terms
+                                and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Custom Javascript -->
+  <script>
+$(document).ready(function() {
+    $(".nav-item").hover( function(){
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+    });
+    $(".nav-item").mouseleave( function(){
+        $(".nav-item").removeClass("active");
+        $(".nav-item:nth-child( 2 )").addClass("active");
+    });
+});
+</script>
+</body>
+</html>
