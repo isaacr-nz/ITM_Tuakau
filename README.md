@@ -1,2 +1,2 @@
 # ITM_Tuakau
-repository for the ITM Tuakau website
+Static site created for my local ITM
